@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MelodysMusic</title>
+</head>
+	<link href="reset.css" rel = "stylesheet" style = "style/css">
+	<link href="stylesfnmenu.css" rel = "stylesheet" style = "style/css">
+	<link href="stylesfnmenu.scss" rel = "stylesheet" style = "style/scss">
+	<link href="stylesmain_fn.css" rel = "stylesheet" style = "style/scss">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<script src="https://www.google.com/recaptcha/enterprise.js?render=6Lda-B8jAAAAAPuyklJmT9MKi1tDsofXc7HmzK5f"></script>
+
+	
+<body>
+	
+<header>
+	<h1 class = "Title"><em>Melody's Music - for academic purposes</em></h1>
+	
+	<!-- Credit to Bennett Feely on Codepen for the navbar idea, I just modified the color part and few other this - https://codepen.io/bennettfeely/pen/qRJOZJ/ -->	
+	<nav class="top-right open">
+	<a class="disc l1" href="soundstations.html">
+		<div>Sound-stations</div>
+	</a>
+	<a class="disc l2" href="Store.html">
+		<div>Store</div>
+	</a>
+	<a class="disc l3" href="contact_us.html">
+		<div>Contact Us</div>
+	</a>
+	<a class="disc l4" href="melodysmusic.html">
+		<div>Home</div>
+	</a>
+	<a class="disc l5 toggle">
+		Menu
+	</a>
+</nav>
+	<script>
+	//Credit to Bennett Feely on Codepen for the navbar idea, I just modified the color part and few other this - https://codepen.io/bennettfeely/pen/qRJOZJ/
+toggle = document.querySelectorAll(".toggle")[0];
+nav = document.querySelectorAll("nav")[0];
+toggle_open_text = "Menu";
+toggle_close_text = "Close";
+
+toggle.addEventListener(
+	"click",
+	function () {
+		nav.classList.toggle("open");
+
+		if (nav.classList.contains("open")) {
+			toggle.innerHTML = toggle_close_text;
+		} else {
+			toggle.innerHTML = toggle_open_text;
+		}
+	},
+	false
+);
+
+setTimeout(function () {
+	nav.classList.toggle("open");
+}, 800);
+
+	
+	</script>
+</header>	
+	
+	
+    <section>
+      <div class="jumbotron text-center mt-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1><img src="My project (2).png" alt="music" >Contact Us<img src="My project (2).png" alt="note" ></h1>
+				<!--I modeled the the music notes and added the lights in blender, the material is from BlenderKit so credit to that and the file was exported as png-->
+              <p>Here is a contact form below, if you need to contact us!&nbsp; &nbsp; &nbsp;&nbsp;</p>
+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>Contact Form&nbsp;</h1>
+           <form method="post" action="form_response_basic.php" >
+	
+	<label for="fname">First Name</label>
+		<input type="text" id="fname" name="fname" value="John">
+	
+	
+	<br><br>
+	
+	
+	
+	<label fsor="lname">Last Name</label>
+
+		<input type="text" id="lname" name="lname" value="Doe">
+	
+	<br><br>
+
+	<label for="email">email</label>
+	<input type="email" id="email" name="email" value="yourname@gmail.com">
+
+	<p>&nbsp;</p>
+	
+	<label for="email2">alternative email</label>
+	<input type="email" id="email2" name="email2" value="yourname@gmail.com">
+	
+	
+	<br><br>
+	
+  <fieldset><legend>Your concerns</legend>
+		
+		<br>
+	
+	<label>Topic</label>
+	<select name="Topic" id="Topic">
+		<option value="#">Please select the topic</option>
+		<option value="Web">Web Development</option>
+		<option value="ux_ui">ux/ui development</option>
+		<option value="resume">My Resume/Credentials</option>
+		<option value="other">Other</option>
+		
+	</select>
+		
+	</fieldset>
+		
+	<br><br>
+	
+	<script>
+grecaptcha.enterprise.ready(function() {
+    grecaptcha.enterprise.execute('6Lda-B8jAAAAAPuyklJmT9MKi1tDsofXc7HmzK5f', {action: 'login'}).then(function(token) {
+       ...
+    });
+});
+</script>
+	<textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+	
+	<br><br>
+	
+	<input type="submit" value="submit">
+	<input type="reset" value="reset">
+	<br><br>
+		
+
+	
+	
+</form>	
+
+<p>&trade; Trademark All rights reserved. Melody's Music</p>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+
+<br><br>
+
+	<center>
+<h4>Donate here to help fund our program or other music programs:</h4>
+		
+<br>
+		
+<h5>Melody's Music</h5>		
+
+<form action="https://www.sandbox.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="hosted_button_id" value="S4V6ADA8GSJW8" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form>
+
+
+<br>
+		
+<h5>Music Programs</h5>		
+		
+<form action="https://www.sandbox.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="hosted_button_id" value="TDYPF2NJT9H4N" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form>	
+		
+</center>	
+	
+	
+	
+<footer class = "bottom_container">
+	
+	<p><em>Copyright &copy; 2022 Melody's Music</em></p>
+	
+	</footer>	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MelodysMusic</title>
+</head>
+	<link href="reset.css" rel = "stylesheet" style = "style/css">
+	<link href="stylesmusicmenu.css" rel = "stylesheet" style = "style/css">
+	<link href="stylesmusicmenu.scss" rel = "stylesheet" style = "style/scss">
+	<link href="stylesmain.css" rel = "stylesheet" style =  "style/css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	  <link rel="icon"  href="My project (1).png">
+
+<body>
+	
+<header>
+	<h1 class = "Title"><em>Melody's Music - for academic purposes</em></h1>
+	
+	<!-- Credit to Bennett Feely on Codepen for the navbar idea, I just modified the color part and few other this - https://codepen.io/bennettfeely/pen/qRJOZJ/ -->	
+	<nav class="top-right open">
+	<a class="disc l1" href="soundstations.html">
+		<div>Sound-stations</div>
+	</a>
+	<a class="disc l2" href="Store.html">
+		<div>Store</div>
+	</a>
+	<a class="disc l3" href="contact_us.html">
+		<div>Contact Us</div>
+	</a>
+	<a class="disc l4" href="melodysmusic.html">
+		<div>Home</div>
+	</a>
+	<a class="disc l5 toggle">
+		Menu
+	</a>
+</nav>
+	<script>
+	//Credit to Bennett Feely on Codepen for the navbar idea, I just modified the color part and few other this - https://codepen.io/bennettfeely/pen/qRJOZJ/
+toggle = document.querySelectorAll(".toggle")[0];
+nav = document.querySelectorAll("nav")[0];
+toggle_open_text = "Menu";
+toggle_close_text = "Close";
+
+toggle.addEventListener(
+	"click",
+	function () {
+		nav.classList.toggle("open");
+
+		if (nav.classList.contains("open")) {
+			toggle.innerHTML = toggle_close_text;
+		} else {
+			toggle.innerHTML = toggle_open_text;
+		}
+	},
+	false
+);
+
+setTimeout(function () {
+	nav.classList.toggle("open");
+}, 800);
+
+	
+	</script>
+</header>	
+	
+	
+	<br><br><br>
+	
+	
+<p class= "p1">This website is music soundstations. We have variety of options of music stations to help you out for whatever zone or mood your in. You might wonder why? Does music even help? Look into the video below and it explains why music and how music impacts the way you think (credit goes to <i>WIRED</i> on Youtube).</p>	
+	
+	
+<div class = "YTvideo_container">
+	<iframe width="1200" height="675" src="https://www.youtube.com/embed/HRE624795zU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+<br><br>
+
+	<center>
+<h4>Interested in learning more? Subscribe to our Melodies Music newsletter for updates!</h4>
+
+<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="QAJ29WFBS7JZ8">
+<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+</center>
+
+
+<footer class = "bottom_container">
+	
+	<p><em>Copyright &copy; 2022 Melody's Music</em></p>
+	
+	</footer>	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Soundstations</title>
+</head>
+	<link href="reset.css" rel = "stylesheet" style = "style/css">
+	<link href="stylesmusicmenu.css" rel = "stylesheet" style = "style/css">
+	<link href="stylesmusicmenu.scss" rel = "stylesheet" style = "style/scss">
+	<link href="stylesmain.css" rel = "stylesheet" style =  "style/css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<body>
+	
+<header>
+	<h1 class = "Title"><em>Melody's Music - for academic purposes</em></h1>
+	
+	<!-- Credit to Bennett Feely on Codepen for the navbar idea, I just modified the color part and few other this - https://codepen.io/bennettfeely/pen/qRJOZJ/ -->	
+	<nav class="top-right open">
+	<a class="disc l1" href="soundstations.html">
+		<div>Sound-stations</div>
+	</a>
+	<a class="disc l2" href="Store.html">
+		<div>Store</div>
+	</a>
+	<a class="disc l3" href="contact_us.html">
+		<div>Contact Us</div>
+	</a>
+	<a class="disc l4" href="melodysmusic.html">
+		<div>Home</div>
+	</a>
+	<a class="disc l5 toggle">
+		Menu
+	</a>
+</nav>
+	<script>
+	//Credit to Bennett Feely on Codepen for the navbar idea, I just modified the color part and few other this - https://codepen.io/bennettfeely/pen/qRJOZJ/
+toggle = document.querySelectorAll(".toggle")[0];
+nav = document.querySelectorAll("nav")[0];
+toggle_open_text = "Menu";
+toggle_close_text = "Close";
+
+toggle.addEventListener(
+	"click",
+	function () {
+		nav.classList.toggle("open");
+
+		if (nav.classList.contains("open")) {
+			toggle.innerHTML = toggle_close_text;
+		} else {
+			toggle.innerHTML = toggle_open_text;
+		}
+	},
+	false
+);
+
+setTimeout(function () {
+	nav.classList.toggle("open");
+}, 800);
+
+	
+	</script>
+</header>	
+	
+	<h2></h2>
+	
+	<br><br><br>
+	
+	<center>	
+	
+<h2>White Noise</h2>
+	
+	
+<p class= "p1">Our music program offers different options of stuff to listen to including white noise. White noise is one thing that can help and an example is like this fan show here below. (this is a video of my fan making white noise sounds).</p>
+	
+	
+	<video class = "video_container" width="320" height="540" controls>
+		  <source src="myfan.mp4" type="video/mp4">
+
+	</video>
+
+	<hr>
+<h2>Cinematic Sounds</h2>		
+		<p class= "p1">Cinematic sounds can help create sound effects to create unique films and other stories come to life!</p>
+		
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/xIcwsQgQrEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+	<br><br>
+		
+<hr>
+		
+	<h3><em>And sooo much more! From Forest sounds, to Video game music to even a book with different options to listen too! Check out the store for more!</em></h3>
+	
+		<br>
+		
+		<hr>
+		<br>
+	<h2>Other Sound Resources found helpful if your looking for some more options:</h2>
+	
+	<br><br>
+
+	<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSoundCloud%2Fposts%2Fpfbid0wrRehywLsvkYuL26htvpoR7UvM6bYEwUir9saUTeLHu4BaAijodUa5Ew7vAe2r8Jl&width=500&show_text=true&height=435&appId" width="500" height="435" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+	
+	<br><br>
+	
+	<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3g7XNBeCVOZiBx325CvbR1?utm_source=generator" width="70%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+	
+	<br><br>
+	
+	<h3>Looking for a product to help you sleep better? Then look no further than the Snooz device below</h3>	
+		
+	<iframe src="https://assets.pinterest.com/ext/embed.html?id=579979258280155030" height="550" width="450" frameborder="0" scrolling="no" ></iframe>
+	
+</center>
+	<br><br>
+	
+	
+	
+<br><br>
+	
+	
+	
+<footer class = "bottom_container">
+	
+	<p><em>Copyright &copy; 2022 Melody's Music</em></p>
+	
+	</footer>	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

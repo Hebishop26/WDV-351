@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  box-sizing: border-box;
+}
+h1{
+	color: mediumvioletred;
+  text-shadow: 0 0 5px aqua, 0 0 24px mediumslateblue, 0 0 27px darkblue;
+font-size: 50px;
+}
+
+header{
+	padding: 40px;
+	background-image: url("music_headerBG.jpg");
+}
+
+.title{
+	padding: 20px;
+	text-align: left;
+	
+}
+
+.columncenter
+{
+	max-width: 500px;
+  margin: auto;
+}
+
+.YTvideo_container{
+	text-align:center;
+	padding: 20px 20px 20px 20px;
+}
+
+h2{
+	font-size: 32px;
+	color: #0097FF;
+	font-family: 'Baskerville'; 
+}
+
+.h2a{
+	font-size: 32px;
+	color: #0097FF;
+	font-family: 'Baskerville'; 
+	text-align: center;
+}
+
+.p1{
+	font-size: 18px;
+	color: black;
+	padding: 20px 20px 20px 20px;
+	text-indent: 50px;
+
+	
+}
+.video_container{
+	text-align:center;
+	padding: 20px 20px 20px 20px;
+	
+}
+
+.bottom_container{
+	text-align:center;
+	color: deepskyblue;
+	  background: linear-gradient(to bottom, #8e2de2, #4a00e0);
+	padding: 20px 20px 20px 20px;
+	font-size: 20px;
+}
+
+iframe{
+	text-align:center;
+	padding: 20px 20px 20px 20px;
+}
+
+/* Float four columns side by side */
+.column {
+  
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+/* form stuff */
+form{
+	border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+        width: 50%;
+	flex-direction: row;
+	align-items:center;
+	justify-content: center;
+	flex-flow:row wrap;
+	
+}
+.button1{
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: darkviolet;
+  border: none;
+  border-radius: 15px;
+}
+.btn1:hover {
+  background-color: #2B32B2;
+}
+.button1:active {
+  background-color: #333399;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.a1:link, .a1:visited {
+  background-color: #f80759;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.a1:hover, .a1:active {
+ background-color:#AB007F;
+}
+}
